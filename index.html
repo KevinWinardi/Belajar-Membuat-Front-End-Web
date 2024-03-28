@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="assets/bookshelf-logo.png">
+</head>
+<body>
+    <header>
+        <button id="menu-back" class="hidden">Kembali</button>
+        <h1>Bookshelf App</h1>
+    </header>
+    <main>
+        <div id="overlay" class="hidden"></div>
+        <section id="menu">
+            <a id="menu-search" class="menu-item">
+                <h2 class="menu-text">Cari Buku</h2>
+                <img class="menu-icon" src="assets/search-icon.png" alt="Mencari">
+            </a>
+            <a id="menu-add" class="menu-item">
+                <h2 class="menu-text">Tambah Buku</h2>
+                <img class="menu-icon" src="assets/add-icon.png" alt="Tmabah">
+            </a>
+        </section>
+
+        <section>
+            <form id="form-search" class="box none">
+                <h2>Menu Cari Buku</h2>
+                <input type="text" name="search" id="input-search" placeholder="Masukkan judul buku">
+                <button id="button-search">Cari</button>
+            </form>
+        </section>
+
+        <section>
+            <form id="form-add" class="box none">
+                <h2>Menu Tambah Buku</h2>
+                <input type="text" name="search" id="title" placeholder="Masukkan judul buku" value="" required>
+                <input type="text" name="search" id="author" placeholder="Masukkan nama penulis buku" value="" required>
+                <input type="number" name="search" id="year" placeholder="Masukkan tahun terbit buku" value="" required>
+                <div id="input-check">
+                    <label>Sudah dibaca</label>
+                    <input type="checkbox" id="checkbox">
+                </div>
+                <button type="button" id="button-add">Tambah</button>
+            </form>
+        </section>
+
+        <section id="box-not-complete" class="box none">
+            <h3>Buku belum dibaca</h3>
+            <div id="not-complete">
+
+            </div>
+        </section>
+        
+        <section id="box-complete" class="box none">
+            <h3>Buku sudah dibaca</h3>
+            <div id="complete">
+
+            </div>
+        </section>
+    </main>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
